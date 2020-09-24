@@ -1,0 +1,13 @@
+<div class="column is-half">
+  <div class="box">
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <strong>Post:</strong>
+      <%= @post.post %>
+    </p>
+
+    <%= link_to 'Edit', edit_post_path(@post) %> |
+    <%= link_to 'Back', posts_path %>
+  </div>
+</div>
