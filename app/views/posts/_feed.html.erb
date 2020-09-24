@@ -26,6 +26,7 @@
             <% if member_signed_in? %>
               <strong><%= post.member.name %> </strong><br />
             <% end %>
+            <p class="date_created">Created at: <%= post.created_at.to_s[0..-5] %> </p>
           </div>
           <% if member_signed_in? %>
             <nav class="level is-mobile">
