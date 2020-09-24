@@ -23,8 +23,11 @@
         <div class="media-content">
           <div class="content">
             <p><%= post.post %></p>
-            <strong><%= post.member.name %> </strong><br />
+            <% if member_signed_in? %>
+              <strong><%= post.member.name %> </strong><br />
+            <% end %>
           </div>
+          <% if member_signed_in? %>
             <nav class="level is-mobile">
               <div class="level-left">
                 <%= link_to post, class: "level-item" do %>
@@ -38,6 +41,7 @@
                 <% end %>
               </div>
             </nav>
+          <% end %>
         </div>
       </article>
     </div>
