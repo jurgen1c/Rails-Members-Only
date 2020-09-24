@@ -33,7 +33,7 @@ Then you can clone the project by typing ```https://github.com/jurgen1c/Rails-Me
 - Type ```bundle install``` in the root file of the project.
 - Type  ```rails db:migrate``` in the root file of the project. 
 - Type ```rails s``` in the root file of the project.
-- You can go to rails console by typing ```rails console``` and create User by using Active Record commands and methods.
+- You can go to rails console by typing ```rails console``` and create Member by using Active Record commands and methods.
 
 ## Authors
 
